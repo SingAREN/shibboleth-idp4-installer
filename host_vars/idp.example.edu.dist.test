@@ -13,23 +13,23 @@ idp_entity_id: "https://idp.example.edu/idp/shibboleth"
 idp_attribute_scope: "example.edu"
 
 # Federation ID
-federation_id: "AAF"
+federation_id: "SGAF"
 
 # The federation's group id used for metadata-based attribute filtering
-federation_group_id: "https://md.test.aaf.edu.au/aaf-test-metadata.xml"
+federation_group_id: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
 
 # Shared federation metadata
-metadata_url: "https://md.test.aaf.edu.au/aaf-test-metadata.xml"
+metadata_url: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
 
 # Shared federation certificate
-metadata_cert_url: "https://md.aaf.edu.au/aaf-metadata-certificate.pem"
-metadata_cert_sha256sum: 00ec963039ca877b7111db3188d3d646e071c4c84ab8201fc35ad62a77ffa1a1
+metadata_cert_url: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-metadata.xml"
+metadata_cert_sha256sum: b632f2d22ef0476bc60b4d47603aaa070dcb8e5727cf4e1a134e4eec2aeb582e
 
 # Metadata file name
-metadata_file_name: aaf-metadata.xml
+metadata_file_name: sgaf-metadata.xml
 
 # Metadata certificate file name
-metadata_cert_file_name: aaf-metadata.pem
+metadata_cert_file_name: sgaf-metadata.pem
 
 # Your organisation's name
 organisation_name: "The University of Example"
@@ -51,7 +51,7 @@ home_organisation: "example.edu"
 # urn:mace:terena.org:schac:homeOrganizationType:au:university
 # urn:mace:terena.org:schac:homeOrganizationType:au:research-institution
 # urn:mace:terena.org:schac:homeOrganizationType:au:other
-home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:au:university"
+home_organisation_type: "urn:mace:terena.org:schac:homeOrganizationType:sg:university"
 
 # Run yum -update on every execution of update_idp.sh
 server_patch: "true"
@@ -66,7 +66,7 @@ firewall: "firewalld"
 enable_backchannel: "false"
 
 # eduGAIN metadata
-edugain_metadata_url: "https://md.test.aaf.edu.au/aaf-edugain-test-metadata.xml"
+edugain_metadata_url: "https://ds.sgaf.org.sg/distribution/metadata/sgaf-edugain.xml"
 
 # Enable eduGAIN
 enable_edugain: "false"
@@ -75,7 +75,7 @@ enable_edugain: "false"
 edugain_metadata_file_name: edugain-metadata.xml
 
 # eduGAIN Metadata certificate file name
-edugain_metadata_cert_file_name: aaf-metadata.pem
+edugain_metadata_cert_file_name: sgaf-metadata.pem
 
 # Source Persistent ID attribute name (for Subject ID and Pairwise ID)
 source_persistent_id:
