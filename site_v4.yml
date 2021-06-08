@@ -7,10 +7,10 @@
       path: "{{ install_base }}/shibboleth-idp4-installer/build"
       repository: "{{ install_base }}/shibboleth-idp4-installer/repository"
   tasks:
-    - name: 'Verify Ansible meets AAF Installer version requirments.'
+    - name: 'Verify Ansible meets SGAF Installer version requirments.'
       assert:
         that: "ansible_version.full is version_compare('2.9', '>=')"
-        msg: "You must update Ansible to at least 2.9 to use this version of the AAF IdP Installer."
+        msg: "You must update Ansible to at least 2.9 to use this version of the SGAF IdP Installer."
 
     - name: 'Create local_conf.yml if it does not exist'
       copy:
